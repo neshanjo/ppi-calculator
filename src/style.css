@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+#container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    min-height: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styles for the history section */
+#history {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+#history h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.checkmark-icon {
+    margin-left: 5px;
+    width: 14px;
+    height: 14px;
+}
+
+#historyList {
+    list-style: none;
+    padding: 0;
+}
+
+#historyList li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Added this line to push the checkmark to the right */
+}
+
+.history-item {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.history-item span {
+    color: #007bff;
+    margin-right: 5px;
+}
+
+/* Styles for the delete-entry and delete-all spans */
+.delete-entry,
+.delete-all {
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkmark-icon {
+    margin-left: 5px;
+    width: 14px;
+    height: 14px;
+}

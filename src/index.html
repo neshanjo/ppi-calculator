@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Density Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Pixel Density Calculator</h1>
+        <label for="x">X Pixels:</label>
+        <input type="number" id="x" placeholder="Enter X pixels" required>
+
+        <label for="y">Y Pixels:</label>
+        <input type="number" id="y" placeholder="Enter Y pixels" required>
+
+        <label for="diagonal">Diagonal (inches):</label>
+        <input type="number" id="diagonal" placeholder="Enter diagonal inches" required>
+
+        <label>
+            <input type="checkbox" id="retinaCheckbox"> Retina Display (x2 scale)
+        </label>
+
+        <button onclick="calculatePPI()">Calculate PPI</button>
+
+        <div id="result"></div>
+
+        <div id="history">
+            <h2>History</h2>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
