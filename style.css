@@ -20,6 +20,34 @@ h1 {
     color: #333;
 }
 
+/* Updated CSS for the info-link */
+.info-link {
+    display: inline-block;
+    vertical-align: top;
+    /* Align the icon to the top */
+    color: #333;
+    text-decoration: none;
+    width: 16px;
+    height: 16px;
+    position: relative;
+}
+
+.info-link svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info-link svg line,
+.info-link svg circle {
+    stroke: currentColor;
+}
+
+.info-link:hover {
+    color: #007bff;
+    /* Hover color: blue */
+}
+
 label {
     display: block;
     margin-top: 20px;

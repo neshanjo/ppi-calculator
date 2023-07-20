@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Density Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <div id="container">
-        <h1>Pixel Density Calculator</h1>
+        <h1>
+            Pixel Density Calculator
+            <a class="info-link" href="https://github.com/neshanjo/ppi-calculator" title="Click icon for more information...">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                    stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="16" x2="12" y2="12" />
+                    <line x1="12" y1="8" x2="12" y2="8" />
+                </svg>
+            </a>
+        </h1>
+
         <label for="x">X Pixels:</label>
         <input type="number" id="x" placeholder="Enter X pixels" required>
 
